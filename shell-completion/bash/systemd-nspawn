@@ -93,7 +93,7 @@ _systemd_nspawn() {
                         ;;
                         --bind|--bind-ro)
                                 compopt -o nospace
-                                comps=$(compgen -S/ -A directory -- "$cur" )
+                                comps=$(compgen -S/ -A file -- "$cur" )
                         ;;
                         --tmpfs)
                                 compopt -o nospace
